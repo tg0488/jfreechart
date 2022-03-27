@@ -298,7 +298,6 @@ public class SymbolAxis extends NumberAxis implements Serializable {
      *                             color of {@code gridBandPaint}.
      * @param ticks  a list of ticks ({@code null} not permitted).
      */
-    //TODO: fix conditional
     protected void drawGridBandsHorizontal(Graphics2D g2,
             Rectangle2D plotArea, Rectangle2D dataArea, 
             boolean firstGridBandIsDark, List ticks) {
@@ -310,7 +309,7 @@ public class SymbolAxis extends NumberAxis implements Serializable {
         //gets the outline stroke width of the plot
         double outlineStrokeWidth = 1.0;
         Stroke outlineStroke = getPlot().getOutlineStroke();
-        if (outlineStroke != null && outlineStroke instanceof BasicStroke) {
+        if (outlineStroke instanceof BasicStroke) {
             outlineStrokeWidth = ((BasicStroke) outlineStroke).getLineWidth();
         }
 
