@@ -2693,6 +2693,7 @@ public class ChartPanel extends JPanel implements ChartChangeListener,
     /**
      * Creates a print job for the chart.
      */
+    //TODO: change to .equals
     public void createChartPrintJob() {
         PrinterJob job = PrinterJob.getPrinterJob();
         PageFormat pf = job.defaultPage();
