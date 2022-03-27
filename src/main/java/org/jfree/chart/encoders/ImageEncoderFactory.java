@@ -77,13 +77,14 @@ public class ImageEncoderFactory {
      * @param format  The image format name.
      * @param imageEncoderClassName  The name of the ImageEncoder class.
      */
-    //TODO: add curly braces
     public static void setImageEncoder(String format,
                                        String imageEncoderClassName) {
-        if (format == null)
+        if (format == null){
             throw new IllegalArgumentException("Image format must not be null");
-        if (imageEncoderClassName == null)
+        }
+        if (imageEncoderClassName == null){
             throw new IllegalArgumentException("Image encoder class name must not be null");
+        }
         encoders.put(format, imageEncoderClassName);
     }
 
