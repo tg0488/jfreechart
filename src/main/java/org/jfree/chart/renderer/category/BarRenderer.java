@@ -789,6 +789,7 @@ public class BarRenderer extends AbstractCategoryItemRenderer
      * @return The range (or {@code null} if the dataset is
      *         {@code null} or empty).
      */
+    //TODO: combined if statements
     @Override
     public Range findRangeBounds(CategoryDataset dataset,
             boolean includeInterval) {
