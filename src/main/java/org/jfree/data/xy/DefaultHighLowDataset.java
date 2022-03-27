@@ -422,9 +422,10 @@ public class DefaultHighLowDataset extends AbstractXYDataset
      //TODO: switch to use System.array copy
     public static Number[] createNumberArray(double[] data) {
         Number[] result = new Number[data.length];
-        for (int i = 0; i < data.length; i++) {
-            result[i] = data[i];
-        }
+        System.arraycopy(data,0,result,0,data.length);
+        // for (int i = 0; i < data.length; i++) {
+        //     result[i] = data[i];
+        // }
         return result;
     }
 
