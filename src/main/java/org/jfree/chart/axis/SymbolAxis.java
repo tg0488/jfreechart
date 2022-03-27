@@ -298,6 +298,7 @@ public class SymbolAxis extends NumberAxis implements Serializable {
      *                             color of {@code gridBandPaint}.
      * @param ticks  a list of ticks ({@code null} not permitted).
      */
+    //TODO: fix conditional
     protected void drawGridBandsHorizontal(Graphics2D g2,
             Rectangle2D plotArea, Rectangle2D dataArea, 
             boolean firstGridBandIsDark, List ticks) {
