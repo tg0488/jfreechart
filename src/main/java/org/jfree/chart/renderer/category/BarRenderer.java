@@ -789,7 +789,6 @@ public class BarRenderer extends AbstractCategoryItemRenderer
      * @return The range (or {@code null} if the dataset is
      *         {@code null} or empty).
      */
-    //TODO: combined if statements
     @Override
     public Range findRangeBounds(CategoryDataset dataset,
             boolean includeInterval) {
@@ -797,10 +796,8 @@ public class BarRenderer extends AbstractCategoryItemRenderer
             return null;
         }
         Range result = super.findRangeBounds(dataset, includeInterval);
-        if (result != null) {
-            if (this.includeBaseInRange) {
-                result = Range.expandToInclude(result, this.base);
-            }
+        if (result != null && this.includeBaseInRange) {
+            result = Range.expandToInclude(result, this.base);
         }
         return result;
     }
