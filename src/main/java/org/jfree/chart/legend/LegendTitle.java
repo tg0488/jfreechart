@@ -514,17 +514,6 @@ public class LegendTitle extends Title
         return result;
     }
 
-    /**
-     * Receives a chart element visitor. 
-     * 
-     * @param visitor  the visitor ({@code null} not permitted).
-     */
-    //TODO: remove method
-    @Override
-    public void receive(ChartElementVisitor visitor) {
-        // FIXME : visit the legend components
-        super.receive(visitor);
-    }
 
     /**
      * Draws the title on a Java 2D graphics device (such as the screen or a
