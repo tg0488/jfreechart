@@ -419,6 +419,7 @@ public class DefaultHighLowDataset extends AbstractXYDataset
      *
      * @return The data as an array of Number objects.
      */
+     //TODO: switch to use System.array copy
     public static Number[] createNumberArray(double[] data) {
         Number[] result = new Number[data.length];
         for (int i = 0; i < data.length; i++) {
