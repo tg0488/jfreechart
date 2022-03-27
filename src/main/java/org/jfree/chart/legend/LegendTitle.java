@@ -519,6 +519,7 @@ public class LegendTitle extends Title
      * 
      * @param visitor  the visitor ({@code null} not permitted).
      */
+    //TODO: remove method
     @Override
     public void receive(ChartElementVisitor visitor) {
         // FIXME : visit the legend components
