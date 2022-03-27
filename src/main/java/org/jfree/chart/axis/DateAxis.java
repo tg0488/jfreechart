@@ -1793,6 +1793,7 @@ public class DateAxis extends ValueAxis implements Cloneable, Serializable {
      *
      * @return A hash code.
      */
+    //TODO: remove method
     @Override
     public int hashCode() {
         return super.hashCode();
