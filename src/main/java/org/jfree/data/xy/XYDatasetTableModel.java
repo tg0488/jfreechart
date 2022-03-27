@@ -198,6 +198,7 @@ public class XYDatasetTableModel extends AbstractTableModel
      * @param column  the column.
      */
     @Override
+    //TODO: remove if statement
     public void setValueAt(Object value, int row, int column) {
         if (isCellEditable(row, column)) {
             // XYDataset only provides methods for reading a dataset...
