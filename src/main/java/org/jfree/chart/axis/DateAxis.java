@@ -1788,16 +1788,6 @@ public class DateAxis extends ValueAxis implements Cloneable, Serializable {
         return super.equals(obj);
     }
 
-    /**
-     * Returns a hash code for this object.
-     *
-     * @return A hash code.
-     */
-    //TODO: remove method
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
 
     /**
      * Returns a clone of the object.
