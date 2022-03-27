@@ -77,6 +77,7 @@ public class ImageEncoderFactory {
      * @param format  The image format name.
      * @param imageEncoderClassName  The name of the ImageEncoder class.
      */
+    //TODO: add curly braces
     public static void setImageEncoder(String format,
                                        String imageEncoderClassName) {
         if (format == null)
