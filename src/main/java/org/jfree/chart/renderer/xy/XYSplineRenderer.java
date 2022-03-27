@@ -290,6 +290,7 @@ public class XYSplineRenderer extends XYLineAndShapeRenderer {
      * @param yAxis  the range axis.
      * @param dataArea  the area within which the data is being drawn.
      */
+    //TODO: add curly braces to if statement
     @Override
     protected void drawPrimaryLineAsPath(XYItemRendererState state,
             Graphics2D g2, XYPlot plot, XYDataset dataset, int pass,
