@@ -199,6 +199,7 @@ public abstract class DataUtils {
      *
      * @return An array of {@code double}.
      */
+     //TODO: switch to use System.arraycopy
     public static Number[] createNumberArray(double[] data) {
         Args.nullNotPermitted(data, "data");
         Number[] result = new Number[data.length];
